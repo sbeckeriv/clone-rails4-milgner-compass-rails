@@ -11,6 +11,7 @@ if CompassRails.rails4?
           :filename => eval_file,
           :line => line,
           :syntax => syntax,
+          :line_comments => ::Rails.application.config.sass.line_comments,
           :cache_store => cache_store,
           :importer => SassImporter.new(context, context.pathname),
           :load_paths => paths,
